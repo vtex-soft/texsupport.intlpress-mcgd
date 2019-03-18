@@ -99,9 +99,9 @@
   \AtBeginDocument{\def\journal@url{http://www.intlpress.com/CNTP/}}
   \AtEndOfPackage{\let\affiliation\@gobble}
   \@joclayouttrue
-  %% Ensuring that journal title will be placed in two lines:
-  \AfterPackage{hyperref}{\hypersetup{breaklinks=True}}%
   \AtBeginDocument{%
+    %% Ensuring that journal title will be placed in two lines:
+    \AfterPackage{hyperref}{\hypersetup{breaklinks=True}}%
     \setattribute{title}{style}{\bfseries}%
     \setattribute{history}{postfix}{}%
     \setattribute{revised}{prefix}{\\Revised~}%
@@ -230,7 +230,7 @@ File could be downloaded from http://www.e-publications.org/ims/support
     \let\special@mt\origspecial@mt
     }
 
-\setattribute{ead}{size}{\ensure@breakable@url\upshape\ttfamily}
+\setattribute{ead}{size}{\@ifundefined{url}{}{\ensure@breakable@url}\upshape\ttfamily}
 
 \def\ensure@breakable@url{%
     \def\email@ead@type{email}%
