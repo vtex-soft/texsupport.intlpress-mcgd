@@ -12,7 +12,7 @@
 ## About
 
 Author support service provides LaTeX style files and `*.tex` file templates designed for International Press journal
-[Mathematics, Computation and Geometry of Data (MCGD)](http://www.intlpress.com/MCGD/) articles.
+[Mathematics, Computation and Geometry of Data (MCGD)](http://www.intlpress.com/MCGD) articles.
 
 ## Package content
 
